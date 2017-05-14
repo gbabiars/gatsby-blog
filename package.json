@@ -1,41 +1,43 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "gatsby-starter-blog",
+  "description": "Greg Babiars's Blog",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Greg Babiars <gbabiars@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/gbabiars/gatsby-blog/issues"
+  },
   "dependencies": {
-    "front-matter": "^2.0.7",
-    "gatsby": "^0.12.6",
-    "highlight.js": "^9.6.0",
-    "history": "^2.0.2",
-    "js-yaml": "^3.6.0",
-    "markdown-it": "^7.0.1",
-    "markdown-it-abbr": "^1.0.3",
-    "markdown-it-attrs": "^0.6.3",
-    "markdown-it-deflist": "^2.0.1",
-    "markdown-it-footnote": "^3.0.1",
-    "markdown-it-sub": "^1.0.0",
-    "object-assign": "^4.1.0",
-    "react-helmet": "^3.1.0",
-    "react-headroom": "^2.1.2",
+    "gatsby": "^0.12.41",
+    "lodash": "^4.17.2",
+    "moment": "^2.18.1",
+    "react-addons-shallow-compare": "^15.5.2",
+    "react-dates": "^4.1.0",
+    "react-helmet": "^3.2.2",
     "react-responsive-grid": "^0.3.3",
-    "react-typography": "^0.12.0",
-    "toml-js": "0.0.8",
-    "typography": "^0.13.0",
-    "typography-plugin-code": "^0.13.0"
+    "react-typography": "^0.15.0",
+    "typography": "^0.15.0",
+    "typography-theme-wordpress-2016": "^0.15.0",
+    "underscore.string": "^3.2.3"
   },
   "devDependencies": {
-    "gh-pages": "^0.11.0"
+    "gh-pages": "^0.12.0"
   },
+  "homepage": "https://github.com/gbabiars/gatsby-blog",
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
   "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+  },
   "scripts": {
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "dev": "gatsby develop",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "develop": "gatsby develop",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gatsby build",
+    "deploy": "gatsby build --prefix-links && gh-pages -d public"
   }
 }
