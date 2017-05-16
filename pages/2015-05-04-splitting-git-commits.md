@@ -1,6 +1,6 @@
 ---
 title: Splitting Git Commits
-date: "2015-05-04T05:29:52.284Z"
+date: "2015-05-04"
 path: "/splitting-git-commits/"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Acceptance Testing a React App using React Test Utilities, Pretender and RxJS
-date: "2016-02-12T05:29:52.284Z"
+date: "2016-02-12"
 path: "/acceptance-testing-a-react-app-using-react-test-utils-pretender-and-rxjs/"
 ---
 
