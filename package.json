@@ -7,7 +7,7 @@
     "url": "https://github.com/gbabiars/gatsby-blog/issues"
   },
   "dependencies": {
-    "gatsby": "^0.12.41",
+    "gatsby": "0.12.46",
     "lodash": "^4.17.2",
     "moment": "^2.18.1",
     "react-addons-shallow-compare": "^15.5.2",
