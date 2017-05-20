@@ -4,6 +4,8 @@ date: "2015-05-15"
 path: "/creating-bem-rules-with-less/"
 ---
 
+**Edit (2017-05-19): This was a horrible idea and you should absolutely not do this.  Much better to keep the code flat so it is easier to search**
+
 BEM is a great way to build styles that work well with components.  For work, we are using LESS for preprocessing.  While working on building some reusable components, I stumbled upon a nice pattern for utilizing nesting to build BEM style rules.  Let's look at a quick example how we can write our styles in LESS using nesting and generate a nice flat BEM style result.
 
 LESS:
