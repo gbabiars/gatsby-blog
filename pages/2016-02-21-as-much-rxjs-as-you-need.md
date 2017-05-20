@@ -1,6 +1,6 @@
 ---
-title: As Much RxJS As You Need
-date: "2016-02-22"
+title: As Much RxJS as You Need
+date: "2016-02-21"
 path: "/as-much-rxjs-as-you-need/"
 ---
 
