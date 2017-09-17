@@ -1,15 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router'
+import Link from 'gatsby-link'
 import { Container } from 'react-responsive-grid'
-import { prefixLink } from 'gatsby-helpers'
-import { rhythm, scale } from 'utils/typography'
-import { config } from 'config'
+
+import { rhythm, scale } from '../utils/typography'
 
 class Template extends React.Component {
-  render () {
+  render() {
     const { location, children } = this.props
     let header
-    if (location.pathname === prefixLink('/')) {
+    if (location.pathname === '/') {
       header = (
         <h1
           style={{
@@ -24,9 +23,9 @@ class Template extends React.Component {
               textDecoration: 'none',
               color: 'inherit',
             }}
-            to={prefixLink('/')}
+            to={'/'}
           >
-            {config.blogTitle}
+            Greg Babiars's Blog
           </Link>
         </h1>
       )
@@ -36,6 +35,7 @@ class Template extends React.Component {
           style={{
             fontFamily: 'Montserrat, sans-serif',
             marginTop: 0,
+            marginBottom: rhythm(-1),
           }}
         >
           <Link
@@ -44,9 +44,9 @@ class Template extends React.Component {
               textDecoration: 'none',
               color: 'inherit',
             }}
-            to={prefixLink('/')}
+            to={'/'}
           >
-            {config.blogTitle}
+            Greg Babiars's Blog
           </Link>
         </h3>
       )
@@ -55,18 +55,18 @@ class Template extends React.Component {
       <Container
         style={{
           maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3/4)}`,
+          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
         {header}
-        {children}
+        {children()}
       </Container>
     )
   }
 }
 
 Template.propTypes = {
-  children: React.PropTypes.any,
+  children: React.PropTypes.func,
   location: React.PropTypes.object,
   route: React.PropTypes.object,
 }

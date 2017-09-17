@@ -1,10 +1,14 @@
 import React from 'react'
-import { config } from 'config'
-import { rhythm } from 'utils/typography'
+
+// Import typefaces
+import 'typeface-montserrat'
+import 'typeface-merriweather'
+
 import profilePic from './profile-pic.jpg'
+import { rhythm } from '../utils/typography'
 
 class Bio extends React.Component {
-  render () {
+  render() {
     return (
       <p
         style={{
@@ -13,16 +17,19 @@ class Bio extends React.Component {
       >
         <img
           src={profilePic}
-          alt={`author ${config.authorName}`}
+          alt={`Greg Babiars`}
           style={{
             float: 'left',
-            marginRight: rhythm(1/4),
+            marginRight: rhythm(1 / 4),
             marginBottom: 0,
             width: rhythm(2),
             height: rhythm(2),
           }}
         />
-        Written by <strong>{config.authorName}</strong> who builds things for the web. <a href="https://twitter.com/gbabiars">You can follow me on Twitter.</a>
+        Written by <strong>Greg Babiars</strong> who builds things for the web.{' '}
+        <a href="https://twitter.com/gbabiars">
+          You can follow me on Twitter.
+        </a>
       </p>
     )
   }
