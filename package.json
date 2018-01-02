@@ -31,7 +31,6 @@
     "typography-theme-wordpress-2016": "^0.15.1"
   },
   "devDependencies": {
-    "gh-pages": "^0.12.0",
     "prettier": "^1.6.1"
   },
   "homepage": "https://github.com/gbabiars/gatsby-blog",
